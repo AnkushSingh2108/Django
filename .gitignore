@@ -1,0 +1,5 @@
+# Ignoring pycache folders
+/__pycache__/**
+
+# Ignoring the virtual environment
+/my_django_env
