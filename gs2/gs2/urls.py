@@ -1,5 +1,5 @@
 """
-URL configuration for firstdjango project.
+URL configuration for gs2 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.0/topics/http/urls/
@@ -15,9 +15,15 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path
+from coourse import views
 
 urlpatterns = [
-    path('',include('first_app.urls')),
     path('admin/', admin.site.urls),
+    path('',views.index),
+    path('learndj/',views.learn_django),
+    path('learnvar/',views.learn_var),
+    path('learnmath/',views.learn_math),
+    path('learnformat/',views.learn_format),
+    path('learnpy/',views.learn_python),
 ]
